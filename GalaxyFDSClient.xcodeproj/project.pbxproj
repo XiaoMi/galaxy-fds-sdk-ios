@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E600158C4F2ACBBDA7DF47D4 /* FDSUploadPartResultList.m in Sources */ = {isa = PBXBuildFile; fileRef = E601FCFB731C687F858A1E32 /* FDSUploadPartResultList.m */; };
+		E6002A75AE1E5FD67372868B /* FDSUserParam.m in Sources */ = {isa = PBXBuildFile; fileRef = E60080A8ADE7B96BCDF0CB24 /* FDSUserParam.m */; };
+		E60060560298DA3DFD15A44A /* GalaxyFDSClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E6077675ACDEEC918AAA527B /* GalaxyFDSClient.m */; };
+		E600D2290834AC085D7CC0A5 /* FDSClientConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D7AA4DEDAAD9CADCBE0B6 /* FDSClientConfiguration.m */; };
+		E600EB72E8E1615F63D43887 /* FDSXiaomiHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E60D4E62A7D124773DB698E2 /* FDSXiaomiHeader.m */; };
+		E601228EB3C75A6EFA79AFC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E60D477B0DBC5EC36B63311A /* Foundation.framework */; };
+		E60363147B861F14AAB8F10F /* FDSArgs.m in Sources */ = {isa = PBXBuildFile; fileRef = E605708859AEBAB4B65F52BB /* FDSArgs.m */; };
+		E603F421AB78C21E05336797 /* FDSInitMultipartUploadResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E607EA6BA54D0CB9D59A038E /* FDSInitMultipartUploadResult.m */; };
+		E60433BD6CBB762DDC7B4106 /* FDSUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E6041E6B340A0C6F476751E0 /* FDSUtilities.m */; };
+		E604978C4802985962D874AB /* FDSObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E60A2CB2E9DCBEBC31CFF2B1 /* FDSObject.m */; };
+		E604D889F22CCCA450507B57 /* FDSCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = E6086EBBDD9C0F3F96B6EE6E /* FDSCommon.m */; };
+		E6055CF3237EDD3020B63977 /* FDSSignatureCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = E602F7819A8D840F93B65418 /* FDSSignatureCredential.m */; };
+		E60567E3E7E97AC4790F49DE /* FDSUploadPartResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E609D3CF8E590B0060AAA911 /* FDSUploadPartResult.m */; };
+		E6071F977EE81F67058D2897 /* FDSStorageAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = E6053BAAA62B4079B4C6B43F /* FDSStorageAccessToken.m */; };
+		E607526A2AB8B8AAB8E91FDA /* FDSProgressListener.m in Sources */ = {isa = PBXBuildFile; fileRef = E606853496C4D07FD30CFA84 /* FDSProgressListener.m */; };
+		E6076FDABD16CE907F16EAC3 /* FDSSigner.m in Sources */ = {isa = PBXBuildFile; fileRef = E606EAE75BB4888F4B7BCC30 /* FDSSigner.m */; };
+		E607FC8A0C7947951BC1B119 /* FDSPutObjectResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E60FCEEA4897C654BA94E5BB /* FDSPutObjectResult.m */; };
+		E608B62BFD151E356AF340CD /* GalaxyFDSClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E606EEFF7BE4B854C45DA9AB /* GalaxyFDSClient.h */; };
+		E609A866532D3DF29C78A8A3 /* FDSSubResource.m in Sources */ = {isa = PBXBuildFile; fileRef = E604E08687708F9F03C675F7 /* FDSSubResource.m */; };
+		E60A37685A837819D055D3E4 /* FDSSSOCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = E608560D6D5B7FA0BD23C413 /* FDSSSOCredential.m */; };
+		E60AD6AC76F8592B15FBDFAB /* FDSObjectMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = E60E0A5D0211D148A2893449 /* FDSObjectMetadata.m */; };
+		E60B3E2B0281E4E4D04B1024 /* FDSThumbParam.m in Sources */ = {isa = PBXBuildFile; fileRef = E60A42906AC3FE0BCDA173F1 /* FDSThumbParam.m */; };
+		E60B711298DF97C9DB3F46A2 /* GalaxyFDSClientException.m in Sources */ = {isa = PBXBuildFile; fileRef = E605A2F8C3A965261D8F3A6E /* GalaxyFDSClientException.m */; };
+		E60C635B13B9B0B1632ECBEB /* FDSOAuthCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = E60E1DF32EA5C3DB1C9EB6A6 /* FDSOAuthCredential.m */; };
+		E60E7D89736C3674808243B3 /* FDSObjectInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = E603070DE1EA7BDB5A6708B1 /* FDSObjectInputStream.m */; };
+		E60E7EBF6FF017AF8BBAB476 /* PBXBuildFile */ = {isa = PBXBuildFile; fileRef = E604F585509993D005CB265D /* libGalaxyFDSClient.a */; };
+		E60F3CC92A206C338D91007B /* FDSHttpHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = E60F694B44CCDED75A6FD255 /* FDSHttpHeaders.m */; };
+		E60F8A22BA2112CAB8FAEC6D /* FDSRequestFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E60876935F69668F9EF256F0 /* FDSRequestFactory.m */; };
+		E60FCD28D39B5B34CC1AEC22 /* FDSUploadThreadObj.m in Sources */ = {isa = PBXBuildFile; fileRef = E60274F42FAB181495AEF020 /* FDSUploadThreadObj.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E60B7CF17DE06185F8505BB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E60E30709004142003115098 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E60436D28D4008F663CE932F;
+			remoteInfo = GalaxyFDSClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E6072BE6B8C477510E25919D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				E608B62BFD151E356AF340CD /* GalaxyFDSClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E60080A8ADE7B96BCDF0CB24 /* FDSUserParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSUserParam.m; sourceTree = "<group>"; };
+		E600EB6A8CC7F2AECA598032 /* FDSOAuthCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSOAuthCredential.h; sourceTree = "<group>"; };
+		E601974996F84F2D8C539811 /* FDSSignatureCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSSignatureCredential.h; sourceTree = "<group>"; };
+		E6019CD28ABD245CBEEC56A8 /* FDSSigner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSSigner.h; sourceTree = "<group>"; };
+		E601AB5E6FB6940E9B5DE0AD /* FDSStorageAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSStorageAccessToken.h; sourceTree = "<group>"; };
+		E601FCFB731C687F858A1E32 /* FDSUploadPartResultList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSUploadPartResultList.m; sourceTree = "<group>"; };
+		E60274F42FAB181495AEF020 /* FDSUploadThreadObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSUploadThreadObj.m; sourceTree = "<group>"; };
+		E602F7819A8D840F93B65418 /* FDSSignatureCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSSignatureCredential.m; sourceTree = "<group>"; };
+		E603070DE1EA7BDB5A6708B1 /* FDSObjectInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSObjectInputStream.m; sourceTree = "<group>"; };
+		E60394A977FB8F53999189FD /* FDSRequestFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSRequestFactory.h; sourceTree = "<group>"; };
+		E603CA4CF83817A3E7C75B38 /* FDSProgressListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSProgressListener.h; sourceTree = "<group>"; };
+		E6041E6B340A0C6F476751E0 /* FDSUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSUtilities.m; sourceTree = "<group>"; };
+		E604E08687708F9F03C675F7 /* FDSSubResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSSubResource.m; sourceTree = "<group>"; };
+		E604F585509993D005CB265D /* libGalaxyFDSClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGalaxyFDSClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60526375D607C53404D2DFF /* FDSXiaomiHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSXiaomiHeader.h; sourceTree = "<group>"; };
+		E6053BAAA62B4079B4C6B43F /* FDSStorageAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSStorageAccessToken.m; sourceTree = "<group>"; };
+		E605708859AEBAB4B65F52BB /* FDSArgs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSArgs.m; sourceTree = "<group>"; };
+		E605A2F8C3A965261D8F3A6E /* GalaxyFDSClientException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalaxyFDSClientException.m; sourceTree = "<group>"; };
+		E606149A01BB03B51DC206A3 /* FDSUploadThreadObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSUploadThreadObj.h; sourceTree = "<group>"; };
+		E606853496C4D07FD30CFA84 /* FDSProgressListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSProgressListener.m; sourceTree = "<group>"; };
+		E606EAE75BB4888F4B7BCC30 /* FDSSigner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSSigner.m; sourceTree = "<group>"; };
+		E606EEFF7BE4B854C45DA9AB /* GalaxyFDSClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GalaxyFDSClient.h; sourceTree = "<group>"; };
+		E60714D6BB68AF63EEC8A951 /* GalaxyFDSClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GalaxyFDSClient-Prefix.pch"; sourceTree = "<group>"; };
+		E6077675ACDEEC918AAA527B /* GalaxyFDSClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GalaxyFDSClient.m; sourceTree = "<group>"; };
+		E60776A353E4D0449F27F15A /* FDSHttpHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSHttpHeaders.h; sourceTree = "<group>"; };
+		E607902FFE02EF787B6A5DFE /* FDSUploadPartResultList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSUploadPartResultList.h; sourceTree = "<group>"; };
+		E607D52291DA1C67A393971E /* FDSUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSUtilities.h; sourceTree = "<group>"; };
+		E607EA6BA54D0CB9D59A038E /* FDSInitMultipartUploadResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSInitMultipartUploadResult.m; sourceTree = "<group>"; };
+		E608560D6D5B7FA0BD23C413 /* FDSSSOCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSSSOCredential.m; sourceTree = "<group>"; };
+		E6086EBBDD9C0F3F96B6EE6E /* FDSCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSCommon.m; sourceTree = "<group>"; };
+		E60876935F69668F9EF256F0 /* FDSRequestFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSRequestFactory.m; sourceTree = "<group>"; };
+		E608862223641A3FB43900E2 /* FDSInitMultipartUploadResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSInitMultipartUploadResult.h; sourceTree = "<group>"; };
+		E609068EFFAFC9D8799FBF19 /* FDSClientConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSClientConfiguration.h; sourceTree = "<group>"; };
+		E60970DCA72F4BC78399A17A /* FDSThumbParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSThumbParam.h; sourceTree = "<group>"; };
+		E60994A2245E5591A11D6E44 /* FDSCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSCommon.h; sourceTree = "<group>"; };
+		E609C26847ABDF08EBC4F926 /* FDSUploadPartResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSUploadPartResult.h; sourceTree = "<group>"; };
+		E609D15DFBE990CF76FE0413 /* FDSArgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSArgs.h; sourceTree = "<group>"; };
+		E609D3CF8E590B0060AAA911 /* FDSUploadPartResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSUploadPartResult.m; sourceTree = "<group>"; };
+		E609E3BC4BA2ECE8596E9A66 /* FDSSubResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSSubResource.h; sourceTree = "<group>"; };
+		E60A2CB2E9DCBEBC31CFF2B1 /* FDSObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSObject.m; sourceTree = "<group>"; };
+		E60A42906AC3FE0BCDA173F1 /* FDSThumbParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSThumbParam.m; sourceTree = "<group>"; };
+		E60B32F6A62C5B845D1C688E /* GalaxyFDSCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalaxyFDSCredential.h; sourceTree = "<group>"; };
+		E60B6597E62CB8D544BAE2A6 /* FDSObjectInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSObjectInputStream.h; sourceTree = "<group>"; };
+		E60B856A418090A47153C120 /* FDSObjectMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSObjectMetadata.h; sourceTree = "<group>"; };
+		E60D477B0DBC5EC36B63311A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = ../../../../Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = "<group>"; };
+		E60D4E62A7D124773DB698E2 /* FDSXiaomiHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSXiaomiHeader.m; sourceTree = "<group>"; };
+		E60D7AA4DEDAAD9CADCBE0B6 /* FDSClientConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSClientConfiguration.m; sourceTree = "<group>"; };
+		E60E0A5D0211D148A2893449 /* FDSObjectMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSObjectMetadata.m; sourceTree = "<group>"; };
+		E60E1DF32EA5C3DB1C9EB6A6 /* FDSOAuthCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSOAuthCredential.m; sourceTree = "<group>"; };
+		E60EFC26B935A1D6C8C8702D /* FDSSSOCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSSSOCredential.h; sourceTree = "<group>"; };
+		E60F026638F8EDBD2863193F /* FDSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSObject.h; sourceTree = "<group>"; };
+		E60F59F84DC02104EEC24D9E /* GalaxyFDSClientException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalaxyFDSClientException.h; sourceTree = "<group>"; };
+		E60F694B44CCDED75A6FD255 /* FDSHttpHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSHttpHeaders.m; sourceTree = "<group>"; };
+		E60F6B7D155AA0A817A86276 /* FDSPutObjectResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSPutObjectResult.h; sourceTree = "<group>"; };
+		E60FA8DAE0F20F09553D86DA /* FDSUserParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDSUserParam.h; sourceTree = "<group>"; };
+		E60FCEEA4897C654BA94E5BB /* FDSPutObjectResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDSPutObjectResult.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E603670A4CC3BFA4853B9D6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60E7EBF6FF017AF8BBAB476 /* PBXBuildFile */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60EDF6BEB2999EFB2C175CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E601228EB3C75A6EFA79AFC0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E6039EE96ACC3C92CB9E4A73 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E60F026638F8EDBD2863193F /* FDSObject.h */,
+				E60A2CB2E9DCBEBC31CFF2B1 /* FDSObject.m */,
+				E60FA8DAE0F20F09553D86DA /* FDSUserParam.h */,
+				E60080A8ADE7B96BCDF0CB24 /* FDSUserParam.m */,
+				E60970DCA72F4BC78399A17A /* FDSThumbParam.h */,
+				E60A42906AC3FE0BCDA173F1 /* FDSThumbParam.m */,
+				E609E3BC4BA2ECE8596E9A66 /* FDSSubResource.h */,
+				E604E08687708F9F03C675F7 /* FDSSubResource.m */,
+				E60B856A418090A47153C120 /* FDSObjectMetadata.h */,
+				E60E0A5D0211D148A2893449 /* FDSObjectMetadata.m */,
+				E60F6B7D155AA0A817A86276 /* FDSPutObjectResult.h */,
+				E60FCEEA4897C654BA94E5BB /* FDSPutObjectResult.m */,
+				E603CA4CF83817A3E7C75B38 /* FDSProgressListener.h */,
+				E606853496C4D07FD30CFA84 /* FDSProgressListener.m */,
+				E609C26847ABDF08EBC4F926 /* FDSUploadPartResult.h */,
+				E609D3CF8E590B0060AAA911 /* FDSUploadPartResult.m */,
+				E60B6597E62CB8D544BAE2A6 /* FDSObjectInputStream.h */,
+				E603070DE1EA7BDB5A6708B1 /* FDSObjectInputStream.m */,
+				E601AB5E6FB6940E9B5DE0AD /* FDSStorageAccessToken.h */,
+				E6053BAAA62B4079B4C6B43F /* FDSStorageAccessToken.m */,
+				E607902FFE02EF787B6A5DFE /* FDSUploadPartResultList.h */,
+				E601FCFB731C687F858A1E32 /* FDSUploadPartResultList.m */,
+				E608862223641A3FB43900E2 /* FDSInitMultipartUploadResult.h */,
+				E607EA6BA54D0CB9D59A038E /* FDSInitMultipartUploadResult.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E6039EF89795D25DF14D445C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E60714D6BB68AF63EEC8A951 /* GalaxyFDSClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E605713AA72C5F75D24AC13B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E60D477B0DBC5EC36B63311A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E60AB5E15F2DD7C111E5361E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E604F585509993D005CB265D /* libGalaxyFDSClient.a */,
+				E605713AA72C5F75D24AC13B /* Frameworks */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E60B93071A92C8084E2B3D78 /* GalaxyFDSClient */ = {
+			isa = PBXGroup;
+			children = (
+				E6039EF89795D25DF14D445C /* Supporting Files */,
+				E606EEFF7BE4B854C45DA9AB /* GalaxyFDSClient.h */,
+				E6077675ACDEEC918AAA527B /* GalaxyFDSClient.m */,
+				E60E029F693CC8143ACBE8E4 /* auth */,
+				E609068EFFAFC9D8799FBF19 /* FDSClientConfiguration.h */,
+				E60D7AA4DEDAAD9CADCBE0B6 /* FDSClientConfiguration.m */,
+				E60F59F84DC02104EEC24D9E /* GalaxyFDSClientException.h */,
+				E605A2F8C3A965261D8F3A6E /* GalaxyFDSClientException.m */,
+				E6039EE96ACC3C92CB9E4A73 /* model */,
+				E60F47CF7CE834F47BD11F46 /* util */,
+			);
+			path = GalaxyFDSClient;
+			sourceTree = "<group>";
+		};
+		E60E029F693CC8143ACBE8E4 /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				E6019CD28ABD245CBEEC56A8 /* FDSSigner.h */,
+				E606EAE75BB4888F4B7BCC30 /* FDSSigner.m */,
+				E60EFC26B935A1D6C8C8702D /* FDSSSOCredential.h */,
+				E608560D6D5B7FA0BD23C413 /* FDSSSOCredential.m */,
+				E600EB6A8CC7F2AECA598032 /* FDSOAuthCredential.h */,
+				E60E1DF32EA5C3DB1C9EB6A6 /* FDSOAuthCredential.m */,
+				E60B32F6A62C5B845D1C688E /* GalaxyFDSCredential.h */,
+				E601974996F84F2D8C539811 /* FDSSignatureCredential.h */,
+				E602F7819A8D840F93B65418 /* FDSSignatureCredential.m */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		E60ECB019571220AD2C0173B = {
+			isa = PBXGroup;
+			children = (
+				E60AB5E15F2DD7C111E5361E /* Products */,
+				E60B93071A92C8084E2B3D78 /* GalaxyFDSClient */,
+			);
+			sourceTree = "<group>";
+		};
+		E60F47CF7CE834F47BD11F46 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E609D15DFBE990CF76FE0413 /* FDSArgs.h */,
+				E605708859AEBAB4B65F52BB /* FDSArgs.m */,
+				E60994A2245E5591A11D6E44 /* FDSCommon.h */,
+				E6086EBBDD9C0F3F96B6EE6E /* FDSCommon.m */,
+				E607D52291DA1C67A393971E /* FDSUtilities.h */,
+				E6041E6B340A0C6F476751E0 /* FDSUtilities.m */,
+				E60776A353E4D0449F27F15A /* FDSHttpHeaders.h */,
+				E60F694B44CCDED75A6FD255 /* FDSHttpHeaders.m */,
+				E60526375D607C53404D2DFF /* FDSXiaomiHeader.h */,
+				E60D4E62A7D124773DB698E2 /* FDSXiaomiHeader.m */,
+				E60394A977FB8F53999189FD /* FDSRequestFactory.h */,
+				E60876935F69668F9EF256F0 /* FDSRequestFactory.m */,
+				E606149A01BB03B51DC206A3 /* FDSUploadThreadObj.h */,
+				E60274F42FAB181495AEF020 /* FDSUploadThreadObj.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E60436D28D4008F663CE932F /* GalaxyFDSClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60F0CB4C4FBB667E2ECA4D0 /* Build configuration list for PBXNativeTarget "GalaxyFDSClient" */;
+			buildPhases = (
+				E6091E521114AF9D3B923FDC /* Sources */,
+				E60EDF6BEB2999EFB2C175CC /* Frameworks */,
+				E6072BE6B8C477510E25919D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GalaxyFDSClient;
+			productName = GalaxyFDSClient;
+			productReference = E604F585509993D005CB265D /* libGalaxyFDSClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E60E30709004142003115098 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Xiaomi;
+			};
+			buildConfigurationList = E60E63D4CED31AFA71C1CE10 /* Build configuration list for PBXProject "GalaxyFDSClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E60ECB019571220AD2C0173B;
+			productRefGroup = E60AB5E15F2DD7C111E5361E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E60436D28D4008F663CE932F /* GalaxyFDSClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E609A47C4C8D37310D8311E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6091E521114AF9D3B923FDC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60060560298DA3DFD15A44A /* GalaxyFDSClient.m in Sources */,
+				E6076FDABD16CE907F16EAC3 /* FDSSigner.m in Sources */,
+				E60A37685A837819D055D3E4 /* FDSSSOCredential.m in Sources */,
+				E60C635B13B9B0B1632ECBEB /* FDSOAuthCredential.m in Sources */,
+				E6055CF3237EDD3020B63977 /* FDSSignatureCredential.m in Sources */,
+				E600D2290834AC085D7CC0A5 /* FDSClientConfiguration.m in Sources */,
+				E60B711298DF97C9DB3F46A2 /* GalaxyFDSClientException.m in Sources */,
+				E604978C4802985962D874AB /* FDSObject.m in Sources */,
+				E6002A75AE1E5FD67372868B /* FDSUserParam.m in Sources */,
+				E60B3E2B0281E4E4D04B1024 /* FDSThumbParam.m in Sources */,
+				E609A866532D3DF29C78A8A3 /* FDSSubResource.m in Sources */,
+				E60AD6AC76F8592B15FBDFAB /* FDSObjectMetadata.m in Sources */,
+				E607FC8A0C7947951BC1B119 /* FDSPutObjectResult.m in Sources */,
+				E607526A2AB8B8AAB8E91FDA /* FDSProgressListener.m in Sources */,
+				E60567E3E7E97AC4790F49DE /* FDSUploadPartResult.m in Sources */,
+				E60E7D89736C3674808243B3 /* FDSObjectInputStream.m in Sources */,
+				E6071F977EE81F67058D2897 /* FDSStorageAccessToken.m in Sources */,
+				E600158C4F2ACBBDA7DF47D4 /* FDSUploadPartResultList.m in Sources */,
+				E603F421AB78C21E05336797 /* FDSInitMultipartUploadResult.m in Sources */,
+				E60363147B861F14AAB8F10F /* FDSArgs.m in Sources */,
+				E604D889F22CCCA450507B57 /* FDSCommon.m in Sources */,
+				E60433BD6CBB762DDC7B4106 /* FDSUtilities.m in Sources */,
+				E60F3CC92A206C338D91007B /* FDSHttpHeaders.m in Sources */,
+				E600EB72E8E1615F63D43887 /* FDSXiaomiHeader.m in Sources */,
+				E60F8A22BA2112CAB8FAEC6D /* FDSRequestFactory.m in Sources */,
+				E60FCD28D39B5B34CC1AEC22 /* FDSUploadThreadObj.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60AAC0E87325FB0B03760E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E601965599FED9F835A9D94F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E60436D28D4008F663CE932F /* GalaxyFDSClient */;
+			targetProxy = E60B7CF17DE06185F8505BB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E608DB6EAC14F20B8963D5D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GalaxyFDSClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GalaxyFDSClient/GalaxyFDSClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E609AEDEBFA01C95793753F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E60A865805784DB0F29E25F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GalaxyFDSClient/GalaxyFDSClient-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E60AD13A48A9B952297EDB03 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GalaxyFDSClient/GalaxyFDSClient-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		E60C16D5A746220AFA4A7899 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GalaxyFDSClient.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GalaxyFDSClient/GalaxyFDSClient-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E60EB54FE524725DB3F722D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E60E63D4CED31AFA71C1CE10 /* Build configuration list for PBXProject "GalaxyFDSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E609AEDEBFA01C95793753F1 /* Debug */,
+				E60EB54FE524725DB3F722D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60F0CB4C4FBB667E2ECA4D0 /* Build configuration list for PBXNativeTarget "GalaxyFDSClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E608DB6EAC14F20B8963D5D2 /* Debug */,
+				E60C16D5A746220AFA4A7899 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E60E30709004142003115098 /* Project object */;
+}

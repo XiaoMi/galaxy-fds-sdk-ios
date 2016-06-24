@@ -7,10 +7,8 @@
 
 static NSString *URI_HTTP_PREFIX = @"http://";
 static NSString *URI_HTTPS_PREFIX = @"https://";
-static NSString *URI_FILES = @"files";
-static NSString *URI_CDN = @"cdn";
-static NSString *URI_FDS_SUFFIX = @".fds.api.xiaomi.com";
-static NSString *URI_FDS_SSL_SUFFIX = @".fds-ssl.api.xiaomi.com";
+static NSString *URI_SUFFIX = @"fds.api.xiaomi.com";
+static NSString *URI_CDN_SUFFIX = @"fds.api.mi-img.com";
 static int DEFAULT_TIMEOUT_MS = 50 * 1000;
 static int DEFAULT_MAX_RETRY_TIMES = 3;
 
@@ -81,7 +79,7 @@ static int DEFAULT_MAX_RETRY_TIMES = 3;
     _downloadPartSize = FDSClientConfiguration.DEFAULT_PART_SIZE;
     _uploadThreadNumber = 1;
 
-    _regionName = @"";
+    _regionName = @"cnbj0";
     _isHttpsEnabled = YES;
     _isCdnEnabledForUpload = NO;
     _isCdnEnabledForDownload = YES;
@@ -106,33 +104,11 @@ static int DEFAULT_MAX_RETRY_TIMES = 3;
 }
 
 - (NSString *)buildBaseUri:(BOOL)enableCdn {
-  return [NSString stringWithFormat:@"%@%@%@",
+  return [NSString stringWithFormat:@"%@%@%@.%@",
       _isHttpsEnabled ? URI_HTTPS_PREFIX : URI_HTTP_PREFIX,
-      [self getBaseUriPrefixWithCdn:enableCdn andRegion:_regionName],
-      [self getBaseUriSuffixWithCdn:enableCdn andHttps:_isHttpsEnabled]];
-}
-
-- (NSString *)getBaseUriPrefixWithCdn:(BOOL)enableCdn andRegion:
-    (NSString *)regionName {
-  if ([_regionName isEqualToString:@""]) {
-    if (enableCdn) {
-      return URI_CDN;
-    }
-    return URI_FILES;
-  } else {
-    if (enableCdn) {
-      return [NSString stringWithFormat:@"%@-%@", regionName, URI_CDN];
-    } else {
-      return [NSString stringWithFormat:@"%@-%@", regionName, URI_FILES];
-    }
-  }
-}
-
-- (NSString *)getBaseUriSuffixWithCdn:(BOOL)enableCdn andHttps:(BOOL)enableHttps {
-  if (enableCdn && enableHttps) {
-    return URI_FDS_SSL_SUFFIX;
-  }
-  return URI_FDS_SUFFIX;
+      enableCdn ? @"cdn." : @"",
+      _regionName,
+      enableCdn ? URI_CDN_SUFFIX : URI_SUFFIX];
 }
 
 + (int)DEFAULT_PART_SIZE {

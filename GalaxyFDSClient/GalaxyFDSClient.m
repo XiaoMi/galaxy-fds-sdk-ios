@@ -206,6 +206,7 @@
   long long length = [[metadata getAllMetadata][FDSXiaomiHeader.CONTENT_LENGTH]
       longLongValue];
   [FDSArgs positive:length forName:@"length of object"];
+  [metadata setContentLength:length];
   long long offset = 0;
   long long lastTime = (long long) ([[NSDate date] timeIntervalSince1970] * 1000);
   while (offset < length) {
